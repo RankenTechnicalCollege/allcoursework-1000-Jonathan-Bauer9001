@@ -1,0 +1,60 @@
+body {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  background-color: #4c33ee;
+  color: white;
+}
+
+#wrapper {
+  max-width: 680px;
+  margin: 0 auto;
+}
+
+header {
+  background-color: #ff4028;
+}
+
+#para1 {
+  background-color: #614FFF;
+  border: #ff7f50 dashed 2em;
+}
+
+#para4 {
+ max-width: fit-content;
+ text-align: center;
+ padding: 4px 2px;
+ margin: 2% 2%;
+ border: 2px solid black;
+}
+
+.smallpara {
+  font-size: small;
+}
+
+a:hover {
+ color: coral;
+}
+
+a {
+  color: white;
+  padding: 5px 5px;
+}
+
+main {
+  background-color: rgb(176, 103, 168);
+}
+
+main > p {
+  margin: 0px auto;
+  padding: 10px;
+  text-indent: 7%;
+  padding: 1em 1em;
+}
+
+footer {
+  background-color: #614FFF;
+  text-align: center;
+}
+
+ul {
+  padding-bottom: 20px;
+}
