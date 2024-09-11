@@ -1,0 +1,99 @@
+* {
+  font-family: Georgia;
+}
+a {
+  text-decoration: none;
+}
+
+body {
+background-color: #399918;
+}
+nav {
+ background-color: red;
+ text-align: center;
+}
+nav > a {
+  color: white;
+}
+
+header {
+  color: black;
+  background-color: #A1DD70;
+  text-align: center;
+}
+
+#header-title > a {
+  text-decoration: none;
+  color: black;
+  
+}
+
+footer {
+  text-align: center;
+  background-color: darkred;
+  color: white;
+}
+
+.jumbotron-img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 20vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  box-shadow: 0 2px 2px 2px black;
+  color: rgba(24, 25, 25, 1);
+}
+
+.jumbotron-text {
+  color: red;
+  text-align: center;
+  text-shadow: 2px 2px 2px white;
+  font-size: x-large;
+}
+
+.jumbotron-text > a {
+  text-decoration: none;
+  color: red;
+  font-size: x-large;
+}
+
+.menu {
+  background-color: #F6EEC9;
+  color: black;
+  text-align: center;
+}
+
+.entree-list {
+  list-style-type: circle;
+}
+
+.menu-btn {
+  color: black;
+}
+.entree1 {
+  background-color: rgba(121, 147 ,81, .2);
+}
+
+.entree2 {
+  background-color: rgba(121, 147 ,81, .4);
+}
+
+.entree3 {
+  background-color: rgba(121, 147 ,81, .6);
+}
+
+.entree4 {
+  background-color:  rgba(121, 147 ,81, .8); 
+}
+
+.entree5 {
+  background-color: rgba(121, 147 ,81, 1);
+}
+
+.map {
+  background-color: #FEFDED;
+  text-align: center;
+}
