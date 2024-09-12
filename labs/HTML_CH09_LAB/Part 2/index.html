@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Good Burger</title>
+  <link type="text/css" rel="stylesheet" href="styles/site.css">
+</head>
+<body>
+<!--header includes logo and navbar
+  include the company name with brand logo and make this a link to the homepage
+  include a single-tiered navbar with 5 links -->
+  <header class="header">
+    <h1 class="header-text"><a href="index.html">Good Burger</a></h1>
+    <a href="index.html" ><img src="images/good-burger-burger-logo.webp" width="80px" class="header-logo" alt="Good Burger"></a>
+    <form method="get" action="search.html" class="header-searchform"><input type="search" placeholder="search" class="header-searchbox"></form>
+    <a href="#"><img src="images/icons8-account-64.png" alt="My Account" title="My Account" class="header-account"></a>
+    <a href="#"><img src="images/icons8-reserve-50.png" alt="My Order" title="My Order" class="header-order"></a>
+    <nav class="navbar">
+      <ul class="navbar-menu">
+        <li class="navbar-item"><a href="index.html">Home</a></li>
+        <li class="navbar-item">
+          <div class="navbar-link" tabindex="1">Menu</div>
+          <ul class="navbar-menu">
+            <li class="navbar-link"><a href="#">Combos</a></li>
+            <li class="navbar-link"><a href="#">Entrees</a></li>
+            <li class="navbar-link"><a href="#">Sides</a></li>
+            <li class="navbar-link"><a href="#">Beverages</a></li>
+          </ul>
+        </li>
+        <li class="navbar-item"><a href="#">Order</a></li>
+        <li class="navbar-item"><a href="#">Contact</a></li>
+        <li class="navbar-item"><a href="#">Apply</a></li>
+      </ul>
+    </nav>
+  </header>
+    <!--aside includes some tex and/or links-->
+  <aside id="quick-menu">
+    <q>Welcome to Good Burger, home of the Good Burger, can I take your order?</q>
+    <ul class="combo-list">
+      <li class="combo">
+        <div class="combo-version">Good Meal</div>
+        <div class="burgers">1 Good Burger</div>
+        <div class="fries">1 Good Fries</div>
+        <div class="beverages">1 Good Beverage</div>
+        <div class="price">$3.26</div>
+        <div class="quick-order-btn">Order</div>
+      </li>
+      <li class="combo">
+        <div class="combo-version">Double Good Meal</div>
+        <div class="burgers">2 Good Burger</div>
+        <div class="fries">2 Good Fries</div>
+        <div class="beverages">3 Good Fries</div>
+        <div class="price">$6.52</div>
+        <div class="quick-order-btn">Order</div>
+      </li>
+      <li class="combo">
+        <div class="combo-version">Triple Good Meal</div>
+        <div class="burgers">3 Good Burger</div>
+        <div class="fries">3 Good Fries</div>
+        <div class="beverages">3 Good Fries</div>
+        <div class="price">$9.80</div>
+        <div class="quick-order-btn">Order</div>
+      </li>
+    </ul>
+  </aside>
+  <!--main includes
+    3 sections of content
+    grid of 4+ items-->
+  <main>
+    <section class="jump-section">
+      <ul class="jump-list">
+        <li class="jump-img"><a href="#quick-menu"><img src="images/icons8-street-food-50.png" alt="Combos"></a></li>
+        <li class="jump-img"><a href="#entree-section"><img src="images/icons8-burger-50.png" alt="Entrees"></a></li>
+        <li class="jump-img"><a href="#sides-section"><img src="images/icons8-fries-64.png" alt="Sides"></a></li>
+        <li class="jump-img"><a href="#beverage-section"><img src="images/icons8-beverage-64.png" alt="Beverages"></a></li>
+      </ul>
+    </section>
+    <section id="entree-section">
+      <ul class="entree-list">
+        <li class="entree">
+          <div class="item-name">Good Burger</div>
+          <div class="price">$1.49</div>
+        </li>
+        <li class="entree">
+          <div class="item-name">Double Good Burger</div>
+          <div class="price">$1.89</div>
+        </li>
+        <li class="entree">
+          <div class="item-name">Triple Good Burger</div>
+          <div class="price">$2.29</div>
+        </li>
+        <li class="entree">
+          <div class="item-name">Good Chickwich</div>
+          <div class="price">$2.49</div>
+        </li>
+        <li class="entree">
+          <div class="item-name">Good Taco</div>
+          <div class="price">$1.09</div>
+        </li>
+      </ul>
+    </section>
+    <section id="sides-section">
+      <ul class="sides-list">
+        <li class="side">
+          <div class="item-name">Good Fries</div>
+          <div class="price">$0.79</div>
+        </li>
+        <li class="side">
+          <div class="item-name">Good Chili</div>
+          <div class="price">$0.99</div>
+        </li>
+        <li class="side">
+          <div class="item-name">Good Cookies</div>
+          <div class="price">$0.79</div>
+        </li>
+        <li class="side">
+          <div class="item-name">Good Pies</div>
+          <div class="price">$1.09</div>
+        </li>
+      </ul>
+    </section>
+    <section id="beverage-section">
+      <ul class="beverages-list">
+        <li class="beverage">
+          <div class="item-name">Good Beverage</div>
+          <div class="description">Good Soda, Lemon Lime, Iced Tea, Soda Water, Coca Cola, Diet Coke, Sprite, Hi-C, Fanta Orange, Barq's Root Beer</div>
+          <div class="price">S($0.79) M($0.89) L(0.99)</div>
+        </li>
+        <li class="beverage">
+          <div class="item-name">Good Shake</div>
+          <div class="price">S($1.09) M($1.49)</div>
+        </li>
+        <li class="beverage">
+          <div class="item-name">Good Coffee</div>
+          <div class="price">S($0.49) M($0.69) L(0.89)</div>
+        </li>
+      </ul>
+    </section>
+  </main>
+  <footer>
+    <p class="copyright">&copy; 1999 Good Burger</p>
+  </footer>
+</body>
+</html>
