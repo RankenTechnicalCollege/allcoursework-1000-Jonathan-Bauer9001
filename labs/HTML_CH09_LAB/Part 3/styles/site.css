@@ -1,0 +1,77 @@
+/* hex codes
+#041122-sorta black
+#0d2b67-dark blue
+#32a2ad-teal-
+#a9e2ff-light blue-
+#ff7062-coral-header
+*/
+body{
+  background-color: #0d2b67;
+  color: #041122;
+}
+#wrapper {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: .899%;
+}
+.header {
+  background-color: #ff7062;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  
+}
+.logo{
+  max-width: 100px;
+  max-height: 100px;
+}
+.navbar {
+  background-color: #32a2ad;
+  width: 100%;
+}
+.navbar-list{
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  padding: 0;
+}
+.navbar-item{
+padding: 2px;
+}
+.main{
+  background-color: #a9e2ff;
+}
+
+footer{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  color: whitesmoke;
+
+}
+@media (max-width: 599px) {
+
+}
+@media (min-width: 600px) {
+  .header {
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+  .name, .title {
+    flex: 1 0 2em;
+  }
+}
+@media (min-width: 1200px) {
+  .section-one{
+    max-width: 70%;
+  }
+  .section-two{
+    max-width: 30%;
+  }
+  .copyright{
+    align-self: flex-end;
+  }
+}

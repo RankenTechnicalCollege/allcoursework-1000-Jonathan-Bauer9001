@@ -9,9 +9,19 @@ body {
   margin: 0 auto;
   padding: 0;
   display: flex;
-  max-width: 1200px;
   background-color: rgb(253, 241, 241);
 }
+
+.main-wrapper{
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+} 
+
+#main{
+  flex-grow: 1;
+}
+
 
 .header {
   display: flex;
@@ -36,20 +46,6 @@ body {
   font-size: 1.5em;
 }
 
-.header-searchform {
-  flex-basis:50%;
-  flex-grow: 1;
-  margin-right: 2%;
-  margin-left: 2%;
-
-}
-
-.header-searchbox {
-  width: 100%;
-  height: 3em;
-  padding: .5em;
-  margin-bottom: 5px;
-}
 
 .header-account, .header-order {
  width: 3em;
@@ -215,6 +211,7 @@ ul, li {
   padding: 2px;
   background-color: white;
 }
+
 .copyright {
   display: flex;
   flex-direction: row;
@@ -232,12 +229,14 @@ ul, li {
 
 @media (min-width: 600px) {
 
+
   .navbar-menu {
     flex-direction: row;
   }
    
   .navbar-item {
     flex-direction: row;
+    flex:1;
   }
   #wrapper {
     flex-direction: column;
@@ -246,7 +245,7 @@ ul, li {
   #quick-menu {
     flex-direction: column;
     min-width: 200px;
-    max-width: 300px;
+    max-width: 20%;
     flex: 1;
   }
   .combo-list {
@@ -260,18 +259,31 @@ ul, li {
     flex-wrap: wrap;
     align-self: stretch;
   }
+  .main-wrapper {
+    display: flex;
+    flex-direction: row-reverse;  
+    align-self: stretch;
+  }
+
 }
 
 
 @media (min-width: 900px) { 
+  .header-account, .header-order{
+    padding: 10px;
+    margin: 10px;
+  }
+}
+@media (min-width: 1200px) { 
   #main{
-    max-width: 50%;
-
+    flex-grow: 1;
+  }
  }
 
 
-@media (min-width: 1200px) { @content; }
-
-
-@media (min-width: 2500px) { @content; }
+@media (min-width: 2500px) { 
+  #wrapper{
+    max-width: 2500px;
+  }
+ }
 
