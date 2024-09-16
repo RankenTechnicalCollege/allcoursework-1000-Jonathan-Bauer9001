@@ -65,7 +65,7 @@ body {
   margin: 0;
   padding: 0;
   position: relative;
-  background-color: seagreen;
+  background-color: seagreen; 
 }
 
 .navbar-item {
@@ -73,6 +73,8 @@ body {
   flex: 0 0 auto;
   margin: 0;
   padding: 0;
+  background-color: seagreen;
+  color: white;
 }
 
 .navbar-link {

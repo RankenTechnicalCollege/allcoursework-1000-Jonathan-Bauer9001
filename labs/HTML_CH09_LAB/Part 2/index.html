@@ -5,69 +5,68 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Good Burger</title>
   <link type="text/css" rel="stylesheet" href="styles/site.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
 </head>
 <body>
+  <div id="wrapper">
 <!--header includes logo and navbar
   include the company name with brand logo and make this a link to the homepage
   include a single-tiered navbar with 5 links -->
   <header class="header">
+    <a href="index.html" ><img src="images/good-burger-burger-logo.webp" width="180px" class="header-logo" alt="Good Burger"></a>
     <h1 class="header-text"><a href="index.html">Good Burger</a></h1>
-    <a href="index.html" ><img src="images/good-burger-burger-logo.webp" width="80px" class="header-logo" alt="Good Burger"></a>
     <form method="get" action="search.html" class="header-searchform"><input type="search" placeholder="search" class="header-searchbox"></form>
     <a href="#"><img src="images/icons8-account-64.png" alt="My Account" title="My Account" class="header-account"></a>
     <a href="#"><img src="images/icons8-reserve-50.png" alt="My Order" title="My Order" class="header-order"></a>
+<!-- NAVBAR -->
     <nav class="navbar">
       <ul class="navbar-menu">
-        <li class="navbar-item"><a href="index.html">Home</a></li>
-        <li class="navbar-item">
-          <div class="navbar-link" tabindex="1">Menu</div>
-          <ul class="navbar-menu">
-            <li class="navbar-link"><a href="#">Combos</a></li>
-            <li class="navbar-link"><a href="#">Entrees</a></li>
-            <li class="navbar-link"><a href="#">Sides</a></li>
-            <li class="navbar-link"><a href="#">Beverages</a></li>
-          </ul>
-        </li>
-        <li class="navbar-item"><a href="#">Order</a></li>
-        <li class="navbar-item"><a href="#">Contact</a></li>
-        <li class="navbar-item"><a href="#">Apply</a></li>
+        <li class="navbar-link" tabindex="0"><a href="index.html">Home</a></li>
+        <li class="navbar-link" tabindex="0"><a href="#">Menu</a></li>
+        <li class="navbar-link" tabindex="0"><a href="#">Order</a></li>
+        <li class="navbar-link" tabindex="0"><a href="#">Contact</a></li>
+        <li class="navbar-link" tabindex="0"><a href="#">Apply</a></li>
       </ul>
     </nav>
   </header>
     <!--aside includes some tex and/or links-->
-  <aside id="quick-menu">
-    <q>Welcome to Good Burger, home of the Good Burger, can I take your order?</q>
-    <ul class="combo-list">
-      <li class="combo">
-        <div class="combo-version">Good Meal</div>
-        <div class="burgers">1 Good Burger</div>
-        <div class="fries">1 Good Fries</div>
-        <div class="beverages">1 Good Beverage</div>
-        <div class="price">$3.26</div>
-        <div class="quick-order-btn">Order</div>
-      </li>
-      <li class="combo">
-        <div class="combo-version">Double Good Meal</div>
-        <div class="burgers">2 Good Burger</div>
-        <div class="fries">2 Good Fries</div>
-        <div class="beverages">3 Good Fries</div>
-        <div class="price">$6.52</div>
-        <div class="quick-order-btn">Order</div>
-      </li>
-      <li class="combo">
-        <div class="combo-version">Triple Good Meal</div>
-        <div class="burgers">3 Good Burger</div>
-        <div class="fries">3 Good Fries</div>
-        <div class="beverages">3 Good Fries</div>
-        <div class="price">$9.80</div>
-        <div class="quick-order-btn">Order</div>
-      </li>
-    </ul>
-  </aside>
+
   <!--main includes
     3 sections of content
     grid of 4+ items-->
-  <main>
+    <div class="main-wrapper">
+    <aside id="quick-menu">
+      <h2><q>Welcome to Good Burger, home of the Good Burger, can I take your order?</q></h2>
+      <ul class="combo-list">
+        <li class="combo">
+          <div class="combo-version">Good Meal</div>
+          <div class="burgers">1 Good Burger</div>
+          <div class="fries">1 Good Fries</div>
+          <div class="beverages">1 Good Beverage</div>
+          <div class="price">$3.26</div>
+          <div class="quick-order-btn">Order</div>
+        </li>
+        <li class="combo">
+          <div class="combo-version">Double Good Meal</div>
+          <div class="burgers">2 Good Burger</div>
+          <div class="fries">2 Good Fries</div>
+          <div class="beverages">2 Good Beverages</div>
+          <div class="price">$6.52</div>
+          <div class="quick-order-btn">Order</div>
+        </li>
+        <li class="combo">
+          <div class="combo-version">Triple Good Meal</div>
+          <div class="burgers">3 Good Burger</div>
+          <div class="fries">3 Good Fries</div>
+          <div class="beverages">3 Good Beverages</div>
+          <div class="price">$9.80</div>
+          <div class="quick-order-btn">Order</div>
+        </li>
+      </ul>
+    </aside>
+  <main id="main">
     <section class="jump-section">
       <ul class="jump-list">
         <li class="jump-img"><a href="#quick-menu"><img src="images/icons8-street-food-50.png" alt="Combos"></a></li>
@@ -77,6 +76,7 @@
       </ul>
     </section>
     <section id="entree-section">
+      <h2>Entrees</h2>
       <ul class="entree-list">
         <li class="entree">
           <div class="item-name">Good Burger</div>
@@ -101,6 +101,7 @@
       </ul>
     </section>
     <section id="sides-section">
+      <h2>Sides</h2>
       <ul class="sides-list">
         <li class="side">
           <div class="item-name">Good Fries</div>
@@ -121,6 +122,7 @@
       </ul>
     </section>
     <section id="beverage-section">
+      <h2>Beverages</h2>
       <ul class="beverages-list">
         <li class="beverage">
           <div class="item-name">Good Beverage</div>
@@ -138,8 +140,10 @@
       </ul>
     </section>
   </main>
+  </div>
   <footer>
     <p class="copyright">&copy; 1999 Good Burger</p>
   </footer>
+  </div>
 </body>
 </html>
