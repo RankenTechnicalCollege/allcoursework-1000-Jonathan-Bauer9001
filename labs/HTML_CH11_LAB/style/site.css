@@ -1,0 +1,38 @@
+.jumbotron {
+  background-image: url(/images/cute-colorful-illustration-of-pizza-pattern-vector.jpg);
+  background-size: solid;
+  background-repeat: no-repeat;
+  place-content: center;
+  text-align: center;
+  min-width: 300px;
+}
+
+.overlay {
+  border-width: 10px;
+  border-image: fill 1 linear-gradient(hsla(0, 100%, 50%, 0.8), hsla(0, 100%, 50%, 0.8));
+}
+a:hover,
+a:focus {
+ color: white;
+}
+.jumbo-text {
+  text-shadow: 1px 1px 3px #ECE0A6;
+  text-decoration: none;
+  color: black;
+}
+.map {
+  min-width: 300px;
+}
+.card-text{
+  text-transform: capitalize;
+}
+.card-img-top{
+  border-radius: 5px;
+  padding: 2px;
+}
+.container {
+  min-width: 300px;
+}
+.navbar{
+  min-width: 300px;
+}
