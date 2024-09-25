@@ -1,0 +1,19 @@
+body {
+  margin: 0 auto;
+  padding: 0;
+}
+header {
+  min-width: 312px;
+}
+.header-logo {
+  max-width: 200px;
+}
+.container {
+  min-width: 312px;
+}
+#carousel{
+  max-width: 600px;
+}
+.carousel-inner {
+  border-radius: 5%;
+}
