@@ -1,0 +1,12 @@
+.jumbotron{  
+  background-image: url(images/background.jpeg);
+  width: 100%;
+}
+.jumbotron-tagline, .jumbotron-item{
+  color: white;
+  text-shadow: 2px 2px 4px black;
+  font-size: xx-large;
+}
+.main-content{
+  min-width: 300px;
+}

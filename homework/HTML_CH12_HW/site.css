@@ -1,0 +1,25 @@
+table {
+  border: 1px solid black;
+  border-collapse: collapse;
+  margin: 1em;
+}
+th, td {
+  border: 1px solid black;
+  padding: .2em .7em;
+}
+thead {
+  text-align: left;
+}
+tbody {
+  text-align: left;
+}
+thead, tfoot {
+  background-color: yellow;
+  font-weight: bold;
+}
+tfoot {
+  text-align: end;
+}
+tbody tr:nth-child(even) {
+  background-color: yellow;
+}
