@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Created with Vectornator (http://vectornator.io/) -->
+<svg height="100%" stroke-miterlimit="10" style="fill-rule:nonzero;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;" version="1.1" viewBox="0 0 1024 1024" width="100%" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:vectornator="http://vectornator.io" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+<filter color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse" height="905.044" id="Filter" width="905.044" x="59.777" y="59.777">
+<feGaussianBlur in="SourceGraphic" result="Blur" stdDeviation="24.7191"/>
+</filter>
+<filter color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse" height="472.783" id="Filter_2" width="356.685" x="333.583" y="275.962">
+<feGaussianBlur in="SourceGraphic" result="Blur" stdDeviation="11.9879"/>
+</filter>
+</defs>
+<clipPath id="ArtboardFrame">
+<rect height="1024" width="1024" x="0" y="0"/>
+</clipPath>
+<g clip-path="url(#ArtboardFrame)" id="Layer-1" vectornator:layerName="Layer 1" visibility="hidden">
+<path d="M-10.6145-10.5971L1037.83-9.19825L1034.29 1035.24L-10.1682 1034.41L-10.6145-10.5971Z" fill="#ff7f50" fill-rule="nonzero" opacity="1" stroke="none" vectornator:layerName="Curve 1"/>
+</g>
+<g id="Layer-3" vectornator:layerName="Layer 3">
+<path d="M128.075 512.299C128.075 300.098 300.098 128.075 512.299 128.075C724.5 128.075 896.523 300.098 896.523 512.299C896.523 724.5 724.5 896.523 512.299 896.523C300.098 896.523 128.075 724.5 128.075 512.299Z" fill="#ff7f50" fill-rule="nonzero" opacity="1" stroke="#000000" stroke-linecap="butt" stroke-linejoin="round" stroke-width="13" vectornator:layerName="Oval 2"/>
+<path d="M128.075 512.299C128.075 457.117 139.708 404.651 160.655 357.221C220.26 222.262 355.28 128.075 512.299 128.075C724.5 128.075 896.523 300.098 896.523 512.299C896.523 724.5 724.5 896.523 512.299 896.523C300.098 896.523 128.075 724.5 128.075 512.299Z" fill="none" filter="url(#Filter)" opacity="1" stroke="#000000" stroke-linecap="butt" stroke-linejoin="round" stroke-width="13" vectornator:blur="49.4382" vectornator:layerName="Oval 3"/>
+</g>
+<g id="Layer-2" vectornator:layerName="Layer 2">
+<path d="M226.628 519.37C222.722 515.465 222.722 509.133 226.628 505.228L322.264 409.592C326.169 405.686 332.501 405.686 336.406 409.592L342.11 415.296C345.355 418.541 345.975 423.577 343.614 427.512L295.829 507.154C293.929 510.321 293.929 514.277 295.829 517.444L343.614 597.086C345.975 601.02 345.355 606.057 342.11 609.302L336.406 615.006C332.501 618.911 326.169 618.911 322.264 615.006L226.628 519.37Z" fill="#ffc8b4" fill-rule="nonzero" opacity="1" stroke="#000000" stroke-linecap="butt" stroke-linejoin="round" stroke-width="10" vectornator:layerName="Curve 1"/>
+<path d="M688.192 409.592C692.097 405.686 698.429 405.686 702.334 409.592L797.97 505.228C801.875 509.133 801.875 515.465 797.97 519.37L702.334 615.006C698.429 618.911 692.097 618.911 688.192 615.006L682.487 609.302C679.243 606.057 678.623 601.02 680.983 597.086L728.769 517.444C730.669 514.277 730.669 510.321 728.769 507.154L680.983 427.512C678.623 423.577 679.243 418.541 682.487 415.296L688.192 409.592Z" fill="#ffc8b4" fill-rule="nonzero" opacity="1" stroke="#000000" stroke-linecap="butt" stroke-linejoin="round" stroke-width="10" vectornator:layerName="Curve 2"/>
+<path d="M494.002 786.745C504.107 796.849 520.49 796.849 530.595 786.745L530.595 786.745C540.7 776.64 540.7 760.257 530.595 750.152L530.595 750.152C520.49 740.047 504.107 740.047 494.002 750.152L494.002 750.152C483.898 760.257 483.898 776.64 494.002 786.745L494.002 786.745Z" fill="#ffc8b4" fill-rule="nonzero" opacity="1" stroke="#000000" stroke-linecap="butt" stroke-linejoin="round" stroke-width="10" vectornator:layerName="Curve 4"/>
+<path d="M530.595 237.853C520.49 227.748 504.107 227.748 494.002 237.853L494.002 237.853C483.898 247.958 483.898 264.341 494.002 274.446L494.002 274.446C504.107 284.551 520.49 284.551 530.595 274.446L530.595 274.446C540.7 264.341 540.7 247.958 530.595 237.853L530.595 237.853Z" fill="#ffc8b4" fill-rule="nonzero" opacity="1" stroke="#000000" stroke-linecap="butt" stroke-linejoin="round" stroke-width="10" vectornator:layerName="Curve 5"/>
+<path d="M402.521 439.113C475.706 439.113 504.545 321.551 504.545 321.551C504.545 321.551 475.706 658.67 439.113 695.263C402.521 731.856 345.942 642.063 402.521 585.484C457.41 530.595 565.499 495.692 622.077 439.113C676.966 384.224 622.077 292.742 585.484 329.335C548.892 365.928 520.352 702.3 520.352 702.3C520.352 702.3 548.892 585.484 622.077 585.484" fill="none" filter="url(#Filter_2)" opacity="1" stroke="#ffc8b4" stroke-linecap="round" stroke-linejoin="round" stroke-width="30" vectornator:blur="23.9759" vectornator:layerName="Curve 7"/>
+<path d="M402.521 439.113C475.706 439.113 504.545 321.551 504.545 321.551C504.545 321.551 475.706 658.67 439.113 695.263C402.521 731.856 345.942 642.063 402.521 585.484C457.41 530.595 565.499 495.692 622.077 439.113C676.966 384.224 622.077 292.742 585.484 329.335C548.892 365.928 520.352 702.3 520.352 702.3C520.352 702.3 548.892 585.484 622.077 585.484" fill="none" opacity="1" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="19" vectornator:layerName="Curve 6"/>
+</g>
+</svg>

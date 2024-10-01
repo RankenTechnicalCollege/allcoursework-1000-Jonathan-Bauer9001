@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML_CH13_HW</title>
+  <link href="site.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<!--music form-->
+  <form id="order-form" action="/order" method="post">
+    <h1>Music Survey</h1>
+  <!--name section-->
+    <label for="name">Name:</label><br>
+    <input id="name" placeholder="Full Name" type="text"><br>
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" placeholder="Email" required><br>
+
+  <!--/name section-->
+  <!--favorite section-->
+    <fieldset id="favorite-section">
+      <legend>Select your favorite types of music:</legend>
+      <input type="checkbox" name="pop" id="music-type1" value="pop">
+      <label for="music-type1">Pop</label><br>
+      <input type="checkbox" name="classical" id="music-type2" value="classical">
+      <label for="music-type2">Classical</label><br>
+      <input type="checkbox" name="rock" id="music-type3" value="rock">
+      <label for="music-type3">Rock</label><br>
+      <input type="checkbox" name="folk" id="music-type4" value="folk">
+      <label for="music-type4">Folk</label><br>
+      <input type="checkbox" name="Rap" id="msuic-type5" value="Rap">
+      <label for="music-type5">Rap</label><br>
+      <input type="checkbox" name="other" id="music-type6" value="other">
+      <label for="msuic-type6">Other</label><br>
+    </fieldset>
+  <!--/favorite section-->
+  <!--purchase section-->
+    <fieldset id="purchase-section">
+      <legend>Select how often you purchase music CDs:</legend>
+      <input type="radio" name="duration" id="duration1" value="weekly">
+      <label for="duration1">Weekly</label><br>
+      <input type="radio" name="duration" id="duration2" value="a-few-a-year">
+      <label for="duration2">A few a year</label><br>
+      <input type="radio" name="duration" id="duration3" value="monthly">
+      <label for="duration3">Monthy</label><br>
+      <input type="radio" name="duration" id="duration4" value="never" checked>
+      <label for="duration4">Never</label><br>
+    </fieldset><br>
+  <!--/purchase section-->
+  <!--location section-->
+    <label for="location">Select the locations you listen to Music:</label><br>
+    <select id="location" size="3" multiple>
+        <option value="location-at-home">At home</option>
+        <option value="location-at-home">In the car</option>
+        <option value="location-at-home">On the bus</option>
+        <option value="location-at-home">Anywhere</option>
+    </select><br><br>
+  <!--/location section-->
+  <!--role section-->
+    <label for="music-role">What role does music play in your life?</label><br>
+    <textarea id="music-role" rows="3" cols="60"  ></textarea><br>
+  <!--/role section-->
+  <!--buttons-->
+    <button type="submit">Submit</button>
+    <button type="reset">Reset</button><br><br>
+  <!--/buttons-->
+  Jonathan Bauer jonathan_bauer@insideranken.org
+  </form>
+<!--/music form-->
+
+</body>
+</html>

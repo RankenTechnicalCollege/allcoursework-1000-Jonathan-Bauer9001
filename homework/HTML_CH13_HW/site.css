@@ -1,0 +1,13 @@
+form { 
+  border: 1px solid black;
+  padding: 1em;
+  padding-top: 0;
+  width: fit-content;
+ 
+}
+label, legend  {
+  font-weight: bold;
+}
+#favorite-section, #purchase-section {
+  margin-top: 1em;
+}
