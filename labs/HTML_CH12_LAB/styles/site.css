@@ -1,0 +1,153 @@
+* {
+  margin: 0 auto;
+  padding: 0;
+}
+html { 
+  scroll-padding-top: 58px; 
+}
+body{
+  background-color: #ffe;
+  min-width: 299px;
+}
+/* header */
+#header {
+  width: 100%;
+  background-color: #ffe;
+  border-bottom: 2px solid #132;
+}
+/* hero section */
+#hero {
+  color: #ffe;
+  width: 100vw;
+  height: 100vh;
+  min-width: 299px;
+}
+.overlay {
+  border-width: 10px;
+  border-image: fill 1 linear-gradient(hsla(141, 17%, 77%, 0.8), hsla(141, 17%, 77%, 0.8));
+}
+.hero-quote {
+  background-color: #1D3124;
+  border: 2px solid #132;
+  border-top-left-radius: 1em;
+  border-bottom-right-radius: 1em; 
+  max-width: 300px;
+} 
+.social-links a{
+  color: #ffe;
+  text-decoration: none;
+}
+.social-links {
+  max-width: fit-content;
+  padding-bottom: .5em;
+}
+/* main start */
+main{
+  background-color: #ffe;
+}
+.section-title h2 {
+  padding-top: 1em;
+  border-bottom: 2px solid #e96;
+}
+.resume-title {
+  border-bottom: 2px solid #bcc;
+  border-width: 50%;
+}
+.article {
+  margin-top: 1em;
+}
+.article-list li {
+  list-style-type: circle;
+}
+/* portfolio and coursework section */
+.col {
+  margin-top: 64px;
+  padding-top: 1em;
+}
+.card {
+  background-color: #bcc;
+  height: 100%;
+}
+.list-group-item {
+  background-color: #132;
+  margin: .2em;
+  border-radius: 1em;
+  color: #ffe;
+} 
+.card {
+  margin-top: 1em;
+}
+.card > img {
+  width: 256px;
+  height: 144px;
+  border-radius: 5px;
+  margin-top: 1em;
+}
+.card-body > p {
+  font-style: italic;
+}
+.card a {
+  color: #132;
+}
+.card a:hover,
+.card a:focus {
+  color: #ffe;
+}
+.btn-custom{
+  background-color: #e96;
+}
+/* contact form */
+.contact-type {
+  border: 2px solid #bcc;
+  width: 256px;
+  height: 3em;
+  text-align: center;
+  align-content: center;
+  border-radius: 1em;
+  background-color:#bcc;
+  color: #132;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+.contact-type a {
+  text-decoration: none;
+  color: #132;
+  font-weight: bold;
+}
+.contact-type a:hover,
+.contact-type a:focus {
+  color: #ffe;
+}
+form {
+  background-color: #bcc;
+  padding: 1em;
+  border-radius: 1em;
+  text-align: center;
+  margin-top: 1.4em;
+  margin-bottom: 1em;
+  width: 40%;
+  min-width: 256px;
+}
+input, form > button, textarea {
+  border: 2px solid #132;
+  border-radius: 1em;
+  width: 100%;
+  padding: .3em;
+}
+textarea {
+  border-bottom-right-radius: 0;
+}
+form > button {
+  background-color: #e96;
+}
+label {
+  text-align: left;
+  font-weight: bold;
+}
+/* main end */
+/* footer start */
+footer {
+  background-color: #132;
+  color: #ffe;
+}
+/* footer end */
