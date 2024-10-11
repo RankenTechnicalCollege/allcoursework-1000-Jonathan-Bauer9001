@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Panera Drive-Thru</title>
+</head>
+<body>
+  <form id="drive-thru-form" method="post">
+    <h1>Drive-Thru</h1>
+    <fieldset id="order-form">
+      <legend>Order Form</legend>
+      <label for="cran-slice">Cranberry Orange Slice - $4.19</label>
+      <input id="cran-slice" placeholder="QTY" type="number" name="cran-slice" value="" min="0"><br>
+      <label for="kicken-cheese">Kickin' Grilled Cheese - $8.39</label>
+      <input id="kicken-cheese" placeholder="QTY" type="number" name="kicken-cheese" value="" min="0"><br>
+      <label for="steakwake">Steak &amp; Wake - $6.99</label>
+      <input id="steakWake" placeholder="QTY" type="number" name="steakWake" value="" min="0"><br>
+      <button id="button" type="submit">Submit Order</button>
+      <p id="totalAlert"></p>
+    </fieldset>
+  </form>
+ <script>
+/*
+    const submitButton = document.getElementById('button');
+
+    submitButton.onclick = () => {
+
+      let cranSlice = document.getElementById('cran-slice').value * 4.19;
+    let kickenCheese = document.getElementById('kicken-cheese').value * 8.39;
+    let steakWake = document.getElementById('steakWake').value * 6.99;
+    let total = cranSlice + kickenCheese + steakWake;
+
+      document.getElementById("totalAlert").innerHTML = `Your total is: $${total.toFixed(2)}`;
+    };
+ */
+  
+ //using addEventListen
+    const form = document.getElementById('drive-thru-form');
+
+    form.addEventListener('submit',function(event){
+      event.preventDefault(); // prevents the form from autosubmitting
+
+      let cranSlice = document.getElementById('cran-slice').value * 4.19;
+      let kickenCheese = document.getElementById('kicken-cheese').value * 8.39;
+      let steakWake = document.getElementById('steakWake').value * 6.99;
+
+      let total = cranSlice + kickenCheese + steakWake;
+
+      document.getElementById("totalAlert").innerHTML = `Your total is: $${total.toFixed(2)}`;
+//lines below are for popup alert window
+//      if(alert(`Your total is: $${total.toFixed(2)}`)){
+//        }else 
+//         window.location.reload(); 
+    });
+
+  </script>
+</body>
+</html>

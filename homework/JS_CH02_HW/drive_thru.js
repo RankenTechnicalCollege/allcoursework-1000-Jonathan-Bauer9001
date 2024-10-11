@@ -1,0 +1,1 @@
+const form = document.getElementById('drive-thru-form');
