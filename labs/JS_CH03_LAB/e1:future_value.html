@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS_CH03_LAB_E1</title>
+</head>
+<body>
+  <!--EXERCISE 1:FUTURE VALUE-->
+  <script>
+    let investment = 0;
+    let again = "y";
+    do {
+      do {
+        investment = parseFloat(
+          prompt("Enter investment amount as xxxxx.xx", 10000));
+      }
+      while ( isNaN(investment) || investment <= 0 );
+
+      let rate = 0;
+      do {
+        rate = parseFloat(prompt("Enter interest rate as xx.x", 7.5));
+      }
+      while ( isNaN(rate) || rate <= 0 || rate >= 15 );
+
+      let years = 0;
+      do {
+        years = parseInt(prompt("Enter number of years", 10));
+      }
+      while ( isNaN(years) || years <= 0 );
+
+      document.write(`<h4><label>Investment amount: ${investment} Interest rate: ${rate} Years: ${years}</label></h4>`)
+      
+      let futureValue = investment;
+      let interest = 0;
+      let newInterest = 0;
+      for (let i = 1; i <= years; i++ ) {
+        newInterest += interest;
+        futureValue += futureValue * rate / 100;
+        interest = (futureValue - investment) - newInterest;
+        
+        document.write(`<p>Year: ${i} = Interest: $${interest.toFixed(2)} Value: $${futureValue.toFixed(2)}</p>`);
+      };
+
+
+
+    again = prompt("Repeat entries? (y/n)", "y");
+
+    }
+    while (again == "y");
+
+  </script><!--end of EXERCISE 1: FUTURE VALUE-->
+
+
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS_CH03_LAB_E4</title>
+</head>
+<body>
+  <script>
+    const grades = [];
+    let grade = 0;
+   
+    do {
+      grade = parseInt(prompt("Enter number grade from 0 through 100\nOr enter 999 to end the entries", 999));
+
+      if (grade >= 0 && grade <= 100) {
+        grades[grades.length] = grade;
+      }
+      else if (grade != 999){
+        alert("Grade must be a valid number from 0 through 100.")
+      }
+    } 
+    while(grade != 999);
+
+    document.write(`<h1>Test Scores</h1>`);
+
+    if (grades.length > 0) {
+      for(let i = 0; i < grades.length; i++ ) {
+        let letter = '';
+        if (grades[i] >= 88) {
+          letter = 'A';
+        } else if (grades[i] >= 80) {
+          letter = 'B';
+        } else if (grades[i] >= 68) {
+          letter = 'C';
+        } else if (grades[i] >= 60) {
+          letter = 'D';
+        } else 
+          letter = 'F';
+              
+      document.write(`<p>Grade ${grades[i]} = ${letter}</p>\n`);
+      }
+ 
+    }
+    
+  </script>
+</body>
+</html>
