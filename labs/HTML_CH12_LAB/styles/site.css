@@ -8,12 +8,81 @@ html {
 body{
   background-color: #ffe;
   min-width: 299px;
+  font-family: Ubuntu, Arial, Helvetica, sans-serif;
 }
 /* header */
 #header {
   width: 100%;
   background-color: #ffe;
   border-bottom: 2px solid #132;
+}
+.navbar-brand:hover{
+  transform: scale(1.1);
+}
+.nav-link:focus,
+.nav-link:hover {
+  color: #132;
+  box-shadow: none;
+  outline: none;
+}
+.dropdown-menu {
+  background-color: #ffe;
+}
+.dropdown-menu li > a:hover,
+.dropdown-menu li > a:focus,
+.dropdown-submenu:hover > a {
+  background-image: none;
+  background-color: #ffe;
+}
+
+@media (max-width: 991px) {
+
+  #header .navbar-toggler {
+  display: flex;
+  flex-direction: column;
+  border: none;
+  padding: 4px 9px;
+  outline: none;
+  box-shadow: none;
+  }
+  #header .navbar-toggler span {
+    width: 25px;
+    height: 2px;
+    background: #132;
+    margin: 4px 0;
+    transition: 0.3s;
+  }
+  #header .navbar-toggler:not(.collapsed) span:nth-child(1) {
+    transform: translateY(10px) rotate(45deg);
+  }
+  #header .navbar-toggler:not(.collapsed) span:nth-child(2) {
+    opacity: 0;
+  }
+  #header .navbar-toggler:not(.collapsed) span:nth-child(3) {
+    transform: translateY(-10px) rotate(-45deg);
+  }
+}  
+li a {
+  position: relative;
+  color: #132;
+  font-weight: 300;
+}
+li a::before{
+  position: absolute;
+  content:'';
+  margin-top: .26em;
+  width: 0;
+  left: 0;
+  height: 1.4px;
+  top: 25px;
+  border-radius: 1rem;
+  transition: 0.4s ease-in-out;
+  background-color: #132;
+  
+}
+li a:hover::before{
+  width: 100%;
+  background-color: #e96;
 }
 /* hero section */
 #hero {
@@ -24,26 +93,42 @@ body{
 }
 .overlay {
   border-width: 10px;
-  border-image: fill 1 linear-gradient(hsla(141, 17%, 77%, 0.8), hsla(141, 17%, 77%, 0.8));
+  border-image: fill 1 linear-gradient(hsla(141, 17%, 77%, 0.8)98%,hsla(120, 21%, 76%, 0.2));
 }
 .hero-quote {
-  background-color: #1D3124;
-  border: 2px solid #132;
-  border-top-left-radius: 1em;
-  border-bottom-right-radius: 1em; 
+  border: 1px dashed #132;
+  color: #132;
+  border-radius: 1em;
+  max-width: fit-content;
+  padding-top: .5em;
+  padding-bottom: .5em;
   max-width: 300px;
 } 
-.social-links a{
-  color: #ffe;
+.hero-links a{
+  color: #132;
   text-decoration: none;
 }
-.social-links {
+.hero-links a :hover{
+  color:#e96;
+}
+.hero-links {
+  border: 1px dashed #132;
+  border-radius: 1em;
   max-width: fit-content;
   padding-bottom: .5em;
 }
 /* main start */
 main{
   background-color: #ffe;
+}
+.content-title {
+  border-bottom: 2px solid #bcc;
+}
+.profile-pic {
+  max-width: 200px;
+  border: 2px dashed #132; 
+  border-radius: 10em;
+  margin-bottom: 1em;
 }
 .section-title h2 {
   padding-top: 1em;
@@ -67,6 +152,7 @@ main{
 .card {
   background-color: #bcc;
   height: 100%;
+
 }
 .list-group-item {
   background-color: #132;
@@ -75,11 +161,12 @@ main{
   color: #ffe;
 } 
 .card {
-  margin-top: 1em;
+  margin-top: 1em; 
 }
 .card > img {
   width: 256px;
   height: 144px;
+  border: 1px dashed #132;
   border-radius: 5px;
   margin-top: 1em;
 }
@@ -93,12 +180,17 @@ main{
 .card a:focus {
   color: #ffe;
 }
-.btn-custom{
+.card-link {
   background-color: #e96;
+  text-decoration: none;
+  border: 1px solid #132;
+  border-radius: 1em;
+  width: 100%;
+  padding: .3em;
 }
 /* contact form */
 .contact-type {
-  border: 2px solid #bcc;
+  border: 1px solid rgb(160, 172, 172);
   width: 256px;
   height: 3em;
   text-align: center;
@@ -106,8 +198,7 @@ main{
   border-radius: 1em;
   background-color:#bcc;
   color: #132;
-  margin-top: 1em;
-  margin-bottom: 1em;
+  margin-bottom: 2em;
 }
 .contact-type a {
   text-decoration: none;
@@ -122,14 +213,14 @@ form {
   background-color: #bcc;
   padding: 1em;
   border-radius: 1em;
-  text-align: center;
   margin-top: 1.4em;
   margin-bottom: 1em;
-  width: 40%;
+  width: 80vw;
   min-width: 256px;
+  max-width: 1200px;
 }
 input, form > button, textarea {
-  border: 2px solid #132;
+  border: 1px solid #132;
   border-radius: 1em;
   width: 100%;
   padding: .3em;
@@ -149,5 +240,12 @@ label {
 footer {
   background-color: #132;
   color: #ffe;
+}
+.social-links > a { 
+  color: #ffe;
+  text-decoration: none;
+}
+.social-links > a:hover{
+  color: #e96;
 }
 /* footer end */
