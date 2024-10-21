@@ -10,14 +10,19 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
   </head>
   <body>
-    <header>
-      <nav class="navbar navbar-expand-lg sticky">
+    <header id="header">
+      <nav class="navbar navbar-expand-lg fixed-top bg-custom">
         <div class="container-fluid">
           <a class="navbar-brand active" href="index.html"><img src="images/connecting_through_charity_mockup_draftv3.icon30x30.png" alt="logo"> Connecting Through Charity</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+          <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span></span>
+            <span></span>
+            <span></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
@@ -45,19 +50,22 @@
       </nav>
     </header>
     <main>
-      <div id="hero" class="px-4 py-5 overlay text-center" style="background-image: url(images/connecting_through_charity_hero.png); background-repeat: no-repeat; background-position: center; background-position-y: top; background-size: 200vh;">
-        <div class="hero-content d-flex flex-wrap text-center">
-          <img class="d-flex col-2-lg mx-auto mb-4" src="images/connecting_through_charity_mockup_draftv3.no_outline (1).png" alt="logo" width="200px">
-          <div class="bg-light col-8-lg col-12-md border rounded pb-2">
-            <h1 class="hero-name fw-bold text-body-emphasis">Connecting Through Charity</h1>
+      <div id="hero" class="px-4 py-5 overlay text-center" style="background-image: url(images/pexels-julia-m-cameron-6994806.jpg); background-repeat: no-repeat; background-position: center; background-position-y: top; background-size: 200vh;">
+        <div class="hero-content d-flex flex-wrap align-items-center justify-content-evenly text-center w-100 h-100">
+          <img class="d-flex col-2-lg mb-4" src="images/connecting_through_charity_mockup_draftv3.no_outline (1).png" alt="logo" width="200px">
+          <div class="hero-text bg-custom col-8-lg col-12-md rounded pb-2">
+            <h1 class="hero-name fw-bold ">Connecting Through Charity</h1>
             <div class="mx-auto">
               <p class="hero-quote mb-4 ">Staying connected in the local community to positively impact the life of others.</p>
             </div>
             <div class="social-links text-center">
-              <a href="https://www.facebook.com/ConnectingThroughCharity/?_rdr" target="_blank" class="facebook">
-                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="mx-2 bi bi-facebook" viewBox="0 0 16 16">
+              <a href="https://www.facebook.com/ConnectingThroughCharity/?_rdr" target="_blank" class="social-link facebook">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="mx-2 bg-light border border-1 rounded-5 bi bi-facebook" viewBox="0 0 16 16">
                   <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
                 </svg>
+              </a>
+              <a href="#" target="_blank" class="nextdoor social-links">
+                <img src="images/icons8-nextdoor-48.png" alt="Nextdoor">
               </a>
             </div>
           </div>
@@ -72,6 +80,7 @@
             <a class="btn btn-light border-primary text-primary border-2" href="contact.html">Contact Us</a>
           </div>
       </section>
+
       <section class="about-us">
         <div class="section-heading">About Us:</div>
       </section>
@@ -80,42 +89,70 @@
           <div class="section-body">Make Blessing Bags for the homeless, provide Christmas gifts to families in need within our local school districts, providing Easter Baskets to families for their children, we adopted a teacher and her classroom this year for the first time, we have provided the food for families to make a Thanksgiving dinner. We are continuously adding new projects.</div>
           <div class="section-link"><a class="btn btn-primary" href="gallery.html">See what we've done</a></div>
       </section>
+
+      <div id="about-carousel" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#about-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#about-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#about-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/pexels-cottonbro-6591154.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="images/pexels-rdne-6646900.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="images/pexels-rdne-6646916.jpg"  class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#about-carousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#about-carousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
     </main>
 
-    <footer>
-      <div class="container text-center bg-primary">
-        <div class="row align-items-start">
-          <div class="col text-light">
+    <footer class="bg-primary">
+      <div class="container text-center w-100">
+        <div class="row flex-wrap align-items-center">
+          <div class="col col-md-4">
             <div class="footer-content-header">Donate</div>
-            <ul class="footer-content">
-              <li>Cash donations</li>
-              <li>Paypal</li>
-              <li>Venmo</li>
-              <li>Other</li>
-            </ul>
+            <a href="donations.html">
+              <ul class="footer-content">
+                <li>Cash donations</li>
+                <li>Paypal</li>
+                <li>Venmo</li>
+                <li>Other</li>
+              </ul>
+            </a>
           </div>
-          <div class="col text-light">
+          <div class="col col-md-4">
             <div class="footer-content-header">Get in touch</div>
             <ul class="footer-content">
               <li>Contact us</li>
               <li>Join us</li>
               <li>
                 <a href="https://www.facebook.com/ConnectingThroughCharity/?_rdr" target="_blank" class="facebook">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="text-light mx-2 bi bi-facebook" viewBox="0 0 16 16">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="text-dark mx-2 bi bi-facebook" viewBox="0 0 16 16">
                     <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
                   </svg>
                 </a>
-                <a href="https://www.facebook.com/ConnectingThroughCharity/?_rdr" target="_blank" class="facebook">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="text-light mx-2 bi bi-facebook" viewBox="0 0 16 16">
-                    <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
-                  </svg>
+                <a href="#" target="_blank" class="nextdoor">
+                  <img src="images/icons8-nextdoor-48.png" alt="Nextdoor">
                 </a>
               </li>
             </ul>
           </div>
+          <div class="col col-md-4">
+            <div class="copyright">&copy; copyright 2024</div>
+            <a target="_blank" href="https://icons8.com/icon/xjPYO6v2PV57/nextdoor">Nextdoor</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
           </div>
-          <div class="col text-light">
-            <div>&copy; copyright 2024</div>
           </div>
         </div>
     </footer>
