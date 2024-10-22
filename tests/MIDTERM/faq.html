@@ -5,19 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>CTC-FAQs</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script defer src="scripts/scripts.js"></script>
     <link href="styles/site.css" rel="stylesheet" type="text/css">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
   </head>
   <body>
-    <header>
+    <header id="header">
       <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container-fluid">
           <a class="navbar-brand" href="index.html"><img src="images/connecting_through_charity_mockup_draftv3.icon30x30.png" alt="logo"> Connecting Through Charity</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+          <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span></span>
+            <span></span>
+            <span></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
@@ -125,8 +132,8 @@
           <div class="col col-md-6">
             <div class="footer-content-header">Get in touch</div>
             <ul class="footer-content d-flex flex-wrap justify-content-evenly">
-              <li class="p-1">Contact us</li>
-              <li class="p-1">Join us</li>
+              <li class="p-1"><a class="footer-link" href="contact.html">Contact Us</a></li>
+              <li class="p-1"><a class="footer-link" href="signup-calendar.html">Join Us</a></li>
             </ul>
           </div>
           <div class="row">
@@ -149,6 +156,5 @@
           </div>
         </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   </body>
 </html>

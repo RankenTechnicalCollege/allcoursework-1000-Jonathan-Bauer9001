@@ -47,7 +47,52 @@
       </nav>
     </header>
     <main>
-      
+      <div id="donation-hero" class="px-4 py-5 overlay text-center" style="background-image: url(images/pexels-sheinshine-3127880.jpg); background-repeat: no-repeat; background-position: center; background-position-y: center; background-size: 200vh;">
+        <div class="hero-content d-flex flex-wrap align-items-center justify-content-evenly text-center w-100 h-100">
+        </div>
+      </div>
+      <div class="section-heading">Contact Us</div>
+      <section class="contact-section mx-2 d-flex flex-column flex-md-row align-items-start">
+        <div class="contacts">
+          <ul class="contact-list m-1 d-flex flex-wrap flex-column justify-content-between">
+            <li class="contact-item btn btn-primary">
+              <div class="contact-title">Phone:</div>
+              <a class="contact-link" href="tel:">314.496.6623</a>
+            </li>
+            <li class="contact-item btn btn-primary">
+              <div class="contact-title">Email:</div>
+              <a class="contact-link" href="emailto:ctc.info21@gmail.com">ctc.info21@gmail.com</a>
+            </li>
+            <li class="contact-item btn btn-primary">
+              <div class="contact-title">Address:</div>
+              <a class="contact-link" href="">24 Fawn Brook Court, O'Fallon, MO </a>
+            </li>
+          </ul>
+        </div>
+        <form class="signup-form mb-4 w-100 border rounded p-2 my-1 bg-primary">
+          <fieldset class="d-flex flex-row flex-wrap">
+            <legend class="info">Email Us</legend>
+            <div class="mb-1 w-50 p-2">
+              <label for="fullName" class="form-label">Full Name:</label>
+              <input type="text" class="form-control" id="fullName" required>
+            </div>
+            <div class="mb-1 w-50 p-2">
+              <label for="email" class="form-label">Email address:</label>
+              <input type="email" class="form-control" id="email" aria-describedby="emailHelp" required>
+              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+            <div class="mb-1 w-100 p-2">
+              <label for="subject" class="form-label">Subject: </label>
+              <input type="text" class="form-control" id="subject">
+            </div>
+            <div class="mb-1 w-100 p-2">
+              <label for="message" class="form-label">Message:</label>
+              <textarea id="message" name="message" class="form-control"></textarea>
+            </div>
+          </fieldset>
+          <button type="submit" class="btn btn-light mx-2 px-5">Submit</button>
+        </form>
+      </section>
     </main>
     <footer class="bg-primary">
       <div class="container text-center w-100">
@@ -66,8 +111,8 @@
           <div class="col col-md-6">
             <div class="footer-content-header">Get in touch</div>
             <ul class="footer-content d-flex flex-wrap justify-content-evenly">
-              <li class="p-1">Contact us</li>
-              <li class="p-1">Join us</li>
+              <li class="p-1"><a class="footer-link" href="contact.html">Contact Us</a></li>
+              <li class="p-1"><a class="footer-link" href="signup-calendar.html">Join Us</a></li>
             </ul>
           </div>
           <div class="row">

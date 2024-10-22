@@ -51,8 +51,33 @@
         <div class="hero-content d-flex flex-wrap align-items-center justify-content-evenly text-center w-100 h-100">
         </div>
       </div>
-      <h1>Sign up / Volunteer</h1>
-      <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=America%2FChicago&bgcolor=%23ffffff&title=Connecting%20Through%20Charity&src=NWYyODg0OTI4YzA4ZjE5MDVkNDQzOWRiZGYzZTk2MWMyNGM0ZGUwMzAwMjY3ZWU0MWY4NGJhZjdkOTkzYWI4MkBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%23E4C441" style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+      <h1 class="section-heading">Sign up / Volunteer</h1>
+      <section class="volunteerSection d-flex flex-wrap p-4">
+        <form class="signup-form w-100 border rounded p-2 my-1 bg-primary">
+          <fieldset class="d-flex flex-row flex-wrap">
+            <legend class="info">Info</legend>
+            <div class="mb-1 w-50 p-2">
+              <label for="fullName" class="form-label">Full Name:</label>
+              <input type="text" class="form-control" id="fullName" required>
+            </div>
+            <div class="mb-1 w-50 p-2">
+              <label for="email" class="form-label">Email address:</label>
+              <input type="email" class="form-control" id="email" aria-describedby="emailHelp" required>
+              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+            <div class="mb-1 w-100 p-2">
+              <label for="subject" class="form-label">Subject: What day are you wanting to Volunteer? </label>
+              <input type="text" class="form-control" id="subject">
+            </div>
+            <div class="mb-1 w-100 p-2">
+              <label for="message" class="form-label">Message: Your time available and any additional information</label>
+              <textarea id="message" name="message" class="form-control"></textarea>
+            </div>
+          </fieldset>
+          <button type="submit" class="btn btn-light mx-2 px-5">Submit</button>
+        </form>
+        <iframe class="google-cal border rounded p-1 w-100" src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=America%2FChicago&bgcolor=%23ffffff&title=Connecting%20Through%20Charity&src=NWYyODg0OTI4YzA4ZjE5MDVkNDQzOWRiZGYzZTk2MWMyNGM0ZGUwMzAwMjY3ZWU0MWY4NGJhZjdkOTkzYWI4MkBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%23E4C441" style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+      </section>
     </main>
     <footer class="bg-primary">
       <div class="container text-center w-100">
@@ -71,8 +96,8 @@
           <div class="col col-md-6">
             <div class="footer-content-header">Get in touch</div>
             <ul class="footer-content d-flex flex-wrap justify-content-evenly">
-              <li class="p-1">Contact us</li>
-              <li class="p-1">Join us</li>
+              <li class="p-1"><a class="footer-link" href="contact.html">Contact Us</a></li>
+              <li class="p-1"><a class="footer-link" href="signup-calendar.html">Join Us</a></li>
             </ul>
           </div>
           <div class="row">

@@ -22,13 +22,33 @@ padding: 0;
 .nav-link:active {
   color: whitesmoke;
 }
-
+.pay-cards {
+  margin: 0;
+  padding: 0;
+}
+.contacts {
+  width: 50%;
+}
 @media (max-width: 991px) {
   .nav-link {
     padding-left: .6em;
   }
+  .contacts {
+    width: 100%;
+  }
 }
-
+.contact-list{
+  list-style: none;
+  padding: 0;
+}
+.contact-item {
+  width: 100%;
+  margin-bottom: 1em;
+}
+.contact-link{
+  text-decoration: none;
+  color: whitesmoke;
+}
 .nav-item {
   position: relative;
   color: black;
@@ -115,6 +135,10 @@ padding: 0;
 main {
   min-height: 100vh;
 }
+.signup-form{
+  margin: 0 auto;
+  padding: 0;
+}
 .section-heading { 
   font-weight: 900;
   font-size: x-large;
@@ -169,6 +193,23 @@ main {
   width: 256px;
   align-self: center;
 }
+.card-img-top-gallery {
+  padding-top: 1em;
+  padding-left: .5em;
+  padding-right: .5em;
+}
+@media (max-width: 767px) {
+  .gallery-cards {
+    margin: auto 0;
+    padding: 0;
+    width: 100%;
+  }
+}
+@media (min-width: 768px) {
+  .gallery-cards {
+  width: 18rem;  
+  }
+}
 .toast {
   bottom: 15px;
   right: 15px;
@@ -182,6 +223,27 @@ main {
 }
 .card-link{
   text-decoration: none;
+}
+.form-label {
+  color: whitesmoke;
+}
+.form-check-label {
+  color: whitesmoke;
+}
+.form-text {
+  color: whitesmoke;
+  font-size: small;
+}
+.info {
+  color: whitesmoke;
+  font-weight: bold;
+  border-bottom: 2px solid whitesmoke;
+}
+@media (min-width: 992px) {
+  .signup-form, 
+  .google-cal {
+    max-width: 50%;
+  }  
 }
 /* FOOTER SECTION */
 footer {
@@ -198,6 +260,10 @@ footer li,
 footer ul {
  list-style: none;
   padding: 0;
+}
+.footer-link{
+  text-decoration: none;
+  color: whitesmoke;
 }
 .copyright {
   color: whitesmoke;
