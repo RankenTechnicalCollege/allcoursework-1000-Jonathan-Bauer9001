@@ -6,9 +6,15 @@ font-family: "Red Hat Text", Arial, Helvetica, sans-serif;
 margin: 0 auto;
 padding: 0;
 }
+:root {
+  --background: whitesmoke;
+  --attention: #77fe00;
+ 
+}
 /* HEADER */
 .navbar-brand {
   text-shadow: 1px 1px grey;
+  color: var(--background);
 }
 .navbar-brand:hover,
 .navbar-brand:active{
@@ -49,6 +55,13 @@ padding: 0;
   text-decoration: none;
   color: whitesmoke;
 }
+.donate-btn{
+  color: blue;
+}
+.donate-button {
+  color: var(--attention);
+  font-weight: 700;
+}
 .nav-item {
   position: relative;
   color: black;
@@ -83,6 +96,24 @@ padding: 0;
 #faq-hero {
   height: 40vh;
 }
+@media (max-width: 599px) {
+  #signup-hero,
+  #donation-hero,
+  #faq-hero {
+    height: 15vh;
+  }
+}
+@media (max-width: 371px) {
+  #signup-hero,
+  #donation-hero,
+  #faq-hero {
+    height: 10vh;
+  }
+  .navbar-brand,
+  .nav-link {
+    color: whitesmoke;
+  }
+}
 @media (max-width: 375px) {
   #hero {
     height: 100vh;
@@ -103,7 +134,9 @@ padding: 0;
 .social-link{
   text-decoration: none;
 }
-
+.nav-scrolled {
+  --background: black;
+  } 
 @media (max-width: 991px) {
 
   #header .navbar-toggler {
@@ -117,7 +150,7 @@ padding: 0;
   #header .navbar-toggler span {
     width: 25px;
     height: 2px;
-    background: black;
+    background: var(--background); 
     margin: 4px 0;
     transition: 0.3s;
   }
@@ -130,14 +163,49 @@ padding: 0;
   #header .navbar-toggler:not(.collapsed) span:nth-child(3) {
     transform: translateY(-10px) rotate(-45deg);
   }
-}  
+} 
+
 /* MAIN */
+.button-dark {
+  padding: 8px 20px;
+  border: 1px solid blue;
+  font-size: 14px;
+  line-height: 1.5;
+  text-decoration: none;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  display: inline-block;
+  background: blue;
+  color: whitesmoke;
+  box-shadow: 6px 6px 0 -1px black;
+}
+.button-dark:hover,
+.button-light:hover{
+  transform: translateY(3px);
+}
+
+.button-light {
+  padding: 8px 20px;
+  border: 1px solid grey;
+  font-size: 14px;
+  line-height: 1.5;
+  text-decoration: none;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  display: inline-block;
+  background: whitesmoke;
+  color: blue;
+  box-shadow: 6px 6px 0 -1px black;
+}
 main {
   min-height: 100vh;
 }
 .signup-form{
   margin: 0 auto;
   padding: 0;
+  background-color: blue;
 }
 .section-heading { 
   font-weight: 900;
@@ -210,6 +278,7 @@ main {
   width: 18rem;  
   }
 }
+
 .toast {
   bottom: 15px;
   right: 15px;
