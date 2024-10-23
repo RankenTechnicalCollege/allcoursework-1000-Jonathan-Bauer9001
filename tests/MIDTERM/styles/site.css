@@ -13,7 +13,7 @@ padding: 0;
 }
 .nav-scrolled {
   --background: black;
-  --attention:#5cc400;
+  --attention:#64d501;
   } 
 /* HEADER */
 .navbar-brand {
@@ -91,14 +91,8 @@ padding: 0;
 #hero {
   height: 80vh;
 }
-#signup-hero {
+#other-hero {
   height: 20vh;
-}
-#donation-hero {
-  height: 40vh;
-}
-#faq-hero {
-  height: 40vh;
 }
 @media (max-width: 599px) {
   #signup-hero,
@@ -200,9 +194,6 @@ padding: 0;
   background: whitesmoke;
   color: blue;
   box-shadow: 6px 6px 0 -1px black;
-}
-main {
-  min-height: 100vh;
 }
 .signup-form{
   margin: 0 auto;

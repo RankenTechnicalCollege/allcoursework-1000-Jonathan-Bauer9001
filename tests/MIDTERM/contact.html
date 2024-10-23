@@ -16,7 +16,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
   </head>
-  <body>
+  <body style="min-height: 100vh; display: flex; flex-direction: column;">
     <header id="header">
       <nav class="navbar navbar-expand-lg fixed-top bg-custom">
         <div class="container-fluid navbar-container">
@@ -45,16 +45,15 @@
               <a class="nav-link bg-primary text-light border border-primary border-2 p-2" href="signup-calendar.html" >SIGN UP</a>
             </div>
             <div class="nav-item">
-              <a class="donate-button nav-link border border-primary border-2 p-2" href="donations.html" >DONATE</a>
+              <a class="text-light nav-link border border-primary border-2 p-2" href="donations.html" >DONATE</a>
             </div>
           </div>
         </div>
       </nav>
     </header>
     <main>
-      <div id="donation-hero" class="hero px-4 py-5 overlay text-center" style="background-image: url(images/pexels-sheinshine-3127880.jpg); background-repeat: no-repeat; background-position: center; background-position-y: center;">
+      <div id="other-hero" class=" px-4 py-5 overlay text-center" style="background-image: url(images/pexels-sheinshine-3127880.jpg); background-repeat: no-repeat; background-position: center; background-position-y: center; ">
         </div>
-      </div>
       <div class="section-heading">Contact Us!</div>
       <section class="contact-section mx-4 d-flex flex-column flex-md-row align-items-start">
         <div class="contacts col">
@@ -65,7 +64,7 @@
             </li>
             <li class="contact-item button-dark">
               <div class="contact-title">Email:</div>
-              <a class="contact-link" href="mailto:ctc.info21@gmail.com">ctc.info21@gmail.com</a>
+              <a class="contact-link" href="emailto:ctc.info21@gmail.com">ctc.info21@gmail.com</a>
             </li>
             <li class="contact-item button-dark">
               <div class="contact-title">Address:</div>
@@ -100,7 +99,9 @@
           <button type="submit" class="button-light mx-2 my-1">Submit</button>
         </form>
       </section>
+
     </main>
+    <div style="flex-grow:1"></div>
     <footer class="bg-dark">
       <div class="container text-center w-100">
         <div class="row flex-wrap align-items-start">
