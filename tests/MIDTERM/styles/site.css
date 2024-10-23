@@ -8,12 +8,9 @@ padding: 0;
 }
 :root {
   --background: whitesmoke;
-  --attention: #77fe00;
- 
 }
 .nav-scrolled {
   --background: black;
-  --attention:#64d501;
   } 
 /* HEADER */
 .navbar-brand {
@@ -62,14 +59,10 @@ padding: 0;
 .donate-btn{
   color: blue;
 }
-.donate-button {
-  color: var(--attention);
-  font-weight: 700;
-}
 .nav-item {
   position: relative;
   color: black;
-  font-weight: 700 bold;
+  font-weight: 500;
 }
 .nav-item::before{
   position: absolute;
@@ -87,6 +80,21 @@ padding: 0;
 .nav-item:hover::before{
   width: 100%;
   background-color: whitesmoke;
+}
+.special-nav-item-left {
+  position: relative;
+  color: whitesmoke;
+  background-color: blue;
+  border: 2px solid blue;
+  font-weight: 400;
+}
+.special-nav-item-right {
+  position: relative;
+  color: limegreen;
+  border: 2px solid blue;
+  background-color: rgb(240, 240, 240);
+  font-weight: 700;
+  letter-spacing: 1.5px;
 }
 #hero {
   height: 80vh;
@@ -300,6 +308,9 @@ padding: 0;
   color: whitesmoke;
   font-weight: bold;
   border-bottom: 2px solid whitesmoke;
+}
+.google-cal > iframe {
+  min-height: 400px;
 }
 @media (min-width: 992px) {
   .signup-form, 

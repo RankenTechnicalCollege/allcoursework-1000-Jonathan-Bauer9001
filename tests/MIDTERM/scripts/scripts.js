@@ -22,3 +22,6 @@ const heroObserver = new IntersectionObserver(function(entries, heroObserver) {
 }, heroOptions);
 
 heroObserver.observe(hero);
+
+
+
