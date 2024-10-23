@@ -11,6 +11,10 @@ padding: 0;
   --attention: #77fe00;
  
 }
+.nav-scrolled {
+  --background: black;
+  --attention:#5cc400;
+  } 
 /* HEADER */
 .navbar-brand {
   text-shadow: 1px 1px grey;
@@ -134,9 +138,7 @@ padding: 0;
 .social-link{
   text-decoration: none;
 }
-.nav-scrolled {
-  --background: black;
-  } 
+
 @media (max-width: 991px) {
 
   #header .navbar-toggler {
