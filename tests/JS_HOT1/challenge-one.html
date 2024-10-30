@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Challenge One</title>
+</head>
+<body>
+  <main>
+
+  <form>
+    <label for="movieInput">What is your favorite movie</label>
+    <input type="text" id="movieInput" required value="">
+    <button type="button" id="button" >Add</button>
+    <div id="favoriteList"></div>
+  </form>
+    <script>
+    
+      const btn = document.getElementById('button');
+
+      btn.onclick = () => {
+        let favoriteMovies = ['Survive Style 5+', 'Redline', 'Akira'];
+        let movieInput = document.getElementById('movieInput').value;
+        favoriteMovies.push(movieInput);
+        for (let i = 0; i < favoriteMovies.length; i++) {
+          document.getElementById('favoriteList').innerHTML += favoriteMovies[i] + (`<br>`);
+      }
+    }
+    </script>
+  </main>
+</body>
+</html>

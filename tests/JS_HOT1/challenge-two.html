@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Challenge Two</title>
+</head>
+<body>
+  <main>
+    <form>
+      <label for="age">Enter your age:</label>
+      <input id="age" type="text" value="" required>
+      <button type="button" id="button">Enter</button>
+      <div id="feedback"></div>
+    </form>
+    <script>
+      const btn = document.getElementById('button');
+  
+
+      btn.onclick = () => {
+        const age = parseInt(document.getElementById('age').value);
+
+        if ( age > 200 || age < 1 ) {
+        document.getElementById('feedback').innerHTML = (`Age out of range!`);
+      } else if ( age >= 21 ) {
+        document.getElementById('feedback').innerHTML = (`Welcome to the venue!`);
+      } else if (age < 21) {
+        document.getElementById('feedback').innerHTML = (`You're not old enough!`);
+      } else {
+        document.getElementById('feedback').innerHTML = (`Please enter your age!`);
+      }
+
+      }
+
+    </script>
+  </main>
+</body>
+</html>
