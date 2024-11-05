@@ -31,14 +31,53 @@
           <output id="pennies"></output>
         </div>
         <div>
-          <label for="btn"></label>
+          <label for="button"></label>
           <button type="button" id="button">Calculate</button>
         </div>
       </fieldset>
       <script>
         const $ = selector => document.querySelector(selector);
 
+        const makeChange = () => {
+          let amountDue = parseInt($('#amountDue').value);
+          let current = 0;
+          let quarters = 0;
+          let dimes = 0;
+          let nickels = 0;
+          let pennies = 0;
+
+          if (amountDue > 99 || amountDue < 0 || isNaN(amountDue)) {
+            alert('PLEASE ENTER A VALID AMOUNT')
+          } else {
+            do {
+              if (amountDue >= 25) { 
+                quarters = amountDue / 25;
+                current = amountDue % 25;
+              }
+              if (current <= 24 && current > 9) {
+                dimes = current / 10;
+                current = current % 10;
+              }
+              if (current > 4) {
+                nickels = current / 5;
+                current = current % 5;
+              }
+              if (current > 0) {
+                pennies = current / 1;
+                current = current % 1;
+              }
+    
+            } while (current > 0);
+          }
+          $('#quarters').value = parseInt(quarters);
+          $('#dimes').value = parseInt(dimes);
+          $('#nickels').value = parseInt(nickels);
+          $('#pennies').value = pennies;
+        } 
         
+        document.addEventListener('DOMContentLoaded', () => {
+          $('#button').addEventListener('click', makeChange);
+        })
       </script>
     </form>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
