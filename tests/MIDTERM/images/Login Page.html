@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<!-- saved from url=(0046)http://127.0.0.1:5502/challengeOne/index.html? -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Login Page</title>
+    <link href="./Login Page_files/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  </head>
+  <body>
+    <form class="m-2 border border-primary border-3 rounded p-2" data-dashlane-rid="2ca61d0d4b78a3b1" data-dashlane-classification="login">
+      <div class="mb-3">
+        <div class="text-primary">Login Form</div>
+      </div>
+      <div class="mb-3">
+        <label for="emailInput" class="form-label">Email address</label>
+        <input type="email" class="form-control" id="emailInput" autocomplete="email" data-dashlane-rid="1f5d8a090fc7cf7b" data-dashlane-classification="email" data-kwimpalastatus="alive" data-kwimpalaid="1732115625542-0">
+      </div>
+      <div class="mb-3">
+        <label for="passwordInput" class="form-label">Password</label>
+        <input type="password" class="form-control" id="passwordInput" autocomplete="current-password" data-dashlane-rid="3cb0c7022c86cdce" data-dashlane-classification="password" data-kwimpalastatus="alive" data-kwimpalaid="1732115625542-1">
+      </div>
+      <div id="errorMsg" class="text-danger">That email and password doesn't seem to be right. Try Again.</div>
+      <div id="successMsg" class="text-success"></div>
+      <button type="button" class="btn btn-primary" data-dashlane-label="true" data-dashlane-rid="0bd4d00ec0fa52b5" data-dashlane-classification="action,login" data-kwimpalastatus="dead">Login</button>
+    </form>
+    <script src="./Login Page_files/login.js"></script>
+    <script src="./Login Page_files/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
