@@ -1,0 +1,28 @@
+form {
+  border: 2px solid blue;
+  padding: 1em;
+}
+
+div {
+  margin: .3em;
+}
+
+h1 {
+  color: blue;
+}
+
+.errMsg {
+  color: red;
+}
+#nameInput,
+#scoreInput {
+  display: flex;
+  flex-direction: row;
+}
+#name,
+#score {
+  margin: .1em
+}
+#scoreDisplay {
+  text-transform: capitalize;
+}

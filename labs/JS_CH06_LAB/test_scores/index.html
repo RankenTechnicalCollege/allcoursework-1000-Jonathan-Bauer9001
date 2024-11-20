@@ -3,9 +3,40 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <link rel="stylesheet" href="test.css" type="text/css">
+  <title>Exercise 5: Test Scores</title>
 </head>
 <body>
-  
+  <form>
+    <div>
+      <h1>Use a Test Score array</h1>
+    </div>
+    <div id="nameInput">
+      <label for="name">Name: </label>
+      <input type="text" name="name" id="name" value="" autofocus>
+      <div class="errMsg" id="errMsg1"></div>
+    </div>
+    <div id="scoreInput">
+      <label for="score">Score: </label>
+      <input type="text" name="score" id="score" value="">
+      <div class="errMsg" id="errMsg2"></div>
+    </div>
+    <div>
+      <button type="button" id="addToArray">Add to Array</button>
+      <button type="button" id="displayResults">Display Results</button>
+      <button type="button" id="displayScores">Display Scores</button>
+    </div>
+    <div id="results">
+      <h1 id="resultsTitle"></h1>
+      <div id="averageScore"></div>
+      <div id="highScore"></div>
+    </div>
+    <div id="scores">
+      <h1 id="scoreTitle"></h1>
+      <div id="scoreDisplay"></div>
+      <div></div>
+    </div>
+  </form>
+  <script src="test.js"></script>
 </body>
 </html>
