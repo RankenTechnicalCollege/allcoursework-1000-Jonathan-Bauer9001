@@ -26,20 +26,25 @@
       </fieldset>
     </form>
     <script>
-      const btn = document.getElementById("button");
-      let weight = parseFloat(document.getElementById("weight").value);
-      let height = parseFloat(document.getElementById("height").value);
+      const $ = (selector) => document.querySelector(selector);
+
+      const btn = $('#button')
       let bmi = 0;
 
-      function calcBMI(weight, height) {
+      function calcBMI() {
+        let weight = parseInt($('#weight').value);
+        let height = parseInt($('#height').value);
+    
         bmi = (weight * 703) / (height * height);
-        return bmi;
+
+        return bmi
       }
-      
+
       btn.onclick = () => {
-      calcBMI(weight,height);
-      document.getElementById("bmi").value = (bmi);
+        calcBMI();
+        $('#bmi').value = bmi
       }
+
     </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   </body>
